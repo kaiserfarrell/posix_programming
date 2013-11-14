@@ -9,6 +9,9 @@ writes formatted text to the output stream specify.
 
 On the main code we write a function by using  pthread_create and pthread_join with condition when threadIdx must less the value JUM_THREAD start with 0 it thread will create print through thread_function. The function suspends execution of the calling thread until the target thread terminates by using  pthread_join
 
+compile with 
+gcc create_and_join.c -o -create_and_join -pthread 
+
 
 Output :
 
