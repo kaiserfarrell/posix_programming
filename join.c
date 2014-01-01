@@ -15,7 +15,7 @@ int main()
 
     pthread_create (&thread_id, NULL,&thread_function, NULL);
 
-    pthread_join(thread_id,(void**)&b); //here we are reciving one pointer value so to use that we need double pointer 
+    pthread_join(thread_id,(void**)&b); 
                                         
     printf("b is %s",b);   
 }
